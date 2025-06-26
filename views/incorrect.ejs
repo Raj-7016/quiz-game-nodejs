@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incorrect Answer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffe0e0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .message-box {
+      background: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+      text-align: center;
+    }
+    .message-box h1 {
+      color: #dc3545;
+    }
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #dc3545;
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+      background-color: #bd2130;
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>❌ You submitted the wrong answer!</h1>
+    <p>Please try again.</p>
+    <a href="/back" class="back-button">Go Back</a>
+    <a href="/quit" class="back-button">Quit</a>
+  </div>
+</body>
+</html>
