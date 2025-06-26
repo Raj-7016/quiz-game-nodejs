@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #1e90ff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.5em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .options label {
+      display: block;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .options input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .options label:hover {
+      background-color: #f1f1f1;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0d74d1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Score: <span id="score"><%= (num-1) * 5 %></span>
+  </header>
+
+  <div class="container">
+    <div class="question">
+      <%= quiz.question %>
+    </div>
+
+    <form id="quizForm" action="/check" method="post">
+      <div class="options">
+        <% for (option of quiz.options) { %>
+        <label><input type="radio" name="answer" value="<%= option %>" required><%= option %></label>
+        <% } %>
+      </div>
+      <button type="submit">Submit Answer</button>
+    </form>
+  </div>
+
+  <!-- <script>
+    const form = document.getElementById('quizForm');
+    const scoreElement = document.getElementById('score');
+    let score = 0;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const answer = form.answer.value;
+      if (answer === 'C') {
+        score += 1;
+        alert('Correct!');
+      } else {
+        alert('Incorrect!');
+      }
+      scoreElement.textContent = score;
+      form.reset();
+    });
+  </script> -->
+
+</body>
+</html>
