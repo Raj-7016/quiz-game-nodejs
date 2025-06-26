@@ -1,0 +1,52 @@
+{
+  "1": {
+    "question": "What is the capital of France?",
+    "options": ["Berlin", "Madrid", "Paris", "Rome"],
+    "answer": "Paris"
+  },
+  "2": {
+    "question": "Who wrote the play 'Romeo and Juliet'?",
+    "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+    "answer": "William Shakespeare"
+  },
+  "3": {
+    "question": "What is the largest planet in our solar system?",
+    "options": ["Earth", "Jupiter", "Saturn", "Mars"],
+    "answer": "Jupiter"
+  },
+  "4": {
+    "question": "Which element has the chemical symbol 'O'?",
+    "options": ["Gold", "Oxygen", "Iron", "Hydrogen"],
+    "answer": "Oxygen"
+  },
+  "5": {
+    "question": "In which year did World War II end?",
+    "options": ["1940", "1942", "1945", "1948"],
+    "answer": "1945"
+  },
+  "6": {
+    "question": "Which ocean is the largest?",
+    "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    "answer": "Pacific Ocean"
+  },
+  "7": {
+    "question": "What currency is used in Japan?",
+    "options": ["Won", "Yuan", "Yen", "Dollar"],
+    "answer": "Yen"
+  },
+  "8": {
+    "question": "What is the hardest natural substance on Earth?",
+    "options": ["Gold", "Iron", "Diamond", "Quartz"],
+    "answer": "Diamond"
+  },
+  "9": {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Michelangelo", "Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso"],
+    "answer": "Leonardo da Vinci"
+  },
+  "10": {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Mercury", "Mars", "Venus", "Jupiter"],
+    "answer": "Mars"
+  }
+}
